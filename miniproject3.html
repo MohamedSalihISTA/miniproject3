@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navigation {
+  background-color: black;
+  padding: 20px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.navigation ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+  background-color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation ul {
+    display: none; 
+  }
+  
+  .navigation ul.open {
+    display: block; 
+  }
+
+  .navigation ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  #menu-toggle {
+    display: block; 
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <button id="menu-toggle">&#9776;</button> 
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+<script src="miniproject3.js">
+
+</script>
+</body>
+</html>
